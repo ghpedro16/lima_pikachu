@@ -1,5 +1,111 @@
+:root{
+    --primary-color: #f5cf05;
+    --secundary-color: #8e4106;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-family: "Righteous", sans-serif;
+    background-color: var(--primary-color);
+}
+
+header{
+    height: 60px;
+    width: 100vw;
+    top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 70px;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-text{
+    display: flex;
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    color: white;
+    opacity: 20%;
+    font-size: 400px;
+    padding-bottom: 260px;
+}
+
+main h2{
+    position: absolute;
+    color: white;
+    font-size: 300px;
+}
+
+.content-image{
+    display: flex;
+    position: absolute;
+    padding-top: 230px;
+    padding-left: 100px;
+}
+
+.mensagem{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 70px;
+    bottom: 115px;
+    color: var(--secundary-color);
+}
+article h3{
+    font-size: 64px;
+}
+
+article h4{
+    font-size: 20px;
+}
+.container{
+    position: absolute;
+    width: 411px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    gap: 40px;
+    right: 70px;
+    bottom: 116px;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    font-style: normal;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+footer span{
+    color: var(--secundary-color);
 }
